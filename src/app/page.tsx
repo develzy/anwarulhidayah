@@ -93,11 +93,11 @@ export default function Home() {
       <section className="section" style={{ background: 'var(--background)' }}>
         <div className="container">
           <div className="gap-responsive center-on-mobile" style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
-            <div style={{ flex: '1 1 400px', position: 'relative', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', border: '1px solid rgba(255,255,255,0.5)', background: 'var(--surface)' }}>
+            <div style={{ flex: '1 1 320px', maxWidth: '380px', margin: '0 auto', position: 'relative', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', border: '1px solid rgba(255,255,255,0.5)', background: 'var(--surface)' }}>
               <div style={{ aspectRatio: '3/4', width: '100%', position: 'relative' }}>
                 <Image
                   src="/kyai.png"
-                  alt="KH. Nawawi Azhari, S.Pd.I"
+                  alt="KH. Nawawi Azhari, S. HI"
                   fill
                   unoptimized
                   style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
             <div style={{ flex: '1 1 500px' }}>
               <span className="badge" style={{ marginBottom: '1rem' }}>Profil Pengasuh</span>
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>KH. Nawawi Azhari, S.Pd.I</h2>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>KH. Nawawi Azhari, S. HI</h2>
               <p style={{ color: 'var(--primary)', fontWeight: 600, marginBottom: '2rem', fontSize: '1.1rem', letterSpacing: '0.05em' }}>
                 PENGASUH PONDOK PESANTREN ANWARUL HIDAYAH
               </p>
