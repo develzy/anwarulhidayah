@@ -74,7 +74,7 @@ export default function Home() {
             padding: '3rem'
           }}>
             <div>
-              <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>25+</h2>
+              <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>100+</h2>
               <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>Santri Aktif</p>
             </div>
             <div style={{ borderLeft: '1px solid var(--border)', borderRight: '1px solid var(--border)' }}>
@@ -97,7 +97,7 @@ export default function Home() {
               <div style={{ aspectRatio: '3/4', width: '100%', position: 'relative' }}>
                 <Image
                   src="/kyai.png"
-                  alt="KH. Nawawi Azhari, S. HI"
+                  alt="KH. Nawawi Ashari, S. HI."
                   fill
                   unoptimized
                   style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
             <div style={{ flex: '1 1 500px' }}>
               <span className="badge" style={{ marginBottom: '1rem' }}>Profil Pengasuh</span>
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>KH. Nawawi Azhari, S. HI</h2>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>KH. Nawawi Ashari, S. HI.</h2>
               <p style={{ color: 'var(--primary)', fontWeight: 600, marginBottom: '2rem', fontSize: '1.1rem', letterSpacing: '0.05em' }}>
                 PENGASUH PONDOK PESANTREN ANWARUL HIDAYAH
               </p>
@@ -201,7 +201,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Ba'da Ashar</h4>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pembelajaran bersama KH. Nawawi, dilanjutkan kegiatan ngaji & penguasaan bacaan Al-Qur'an.</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pembelajaran bersama KH. Nawawi Ashari, S. HI., dilanjutkan kegiatan ngaji & penguasaan bacaan Al-Qur'an.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
@@ -210,7 +210,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Ba'da Isya</h4>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pengkajian bersama KH. Nawawi, dilanjutkan kegiatan pembelajaran Madrasah (Dewan Asatidz).</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pengkajian bersama KH. Nawawi Ashari, S. HI., dilanjutkan kegiatan pembelajaran Madrasah (Dewan Asatidz).</p>
                   </div>
                 </div>
               </div>
