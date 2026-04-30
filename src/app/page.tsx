@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero" style={{
         position: 'relative',
-        height: '80vh',
+        minHeight: '100vh',
         width: '100%',
         display: 'flex',
         alignItems: 'center',
@@ -41,20 +41,20 @@ export default function Home() {
 
         <div className="container animate-fade-in center-on-mobile" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '48rem' }}>
-            <span className="badge" style={{ marginBottom: '1.5rem' }}>
+            <span className="badge" style={{ marginBottom: '1rem' }}>
               Penerimaan Santri Baru 2026/2027
             </span>
-            <h1 style={{ color: 'white', fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', marginBottom: '1.5rem', fontWeight: 700 }}>
+            <h1 style={{ color: 'white', fontSize: 'clamp(2.2rem, 7vw, 4rem)', marginBottom: '1rem', fontWeight: 700, lineHeight: 1.2 }}>
               Membentuk Generasi Beradab & <span className="text-gradient">Berilmu</span>
             </h1>
-            <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', color: '#e2e8f0', fontWeight: 300, lineHeight: 1.8 }}>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#e2e8f0', fontWeight: 300, lineHeight: 1.7 }}>
               Bergabunglah bersama kami di Pondok Pesantren Anwarul Hidayah. Tempat dimana ilmu agama dan akhlak menjadi prioritas utama dalam mendidik santri.
             </p>
             <div className="center-on-mobile" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/pendaftaran" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+              <Link href="/pendaftaran" className="btn btn-primary" style={{ padding: '0.8rem 2rem', fontSize: '1.05rem' }}>
                 Daftar Sekarang
               </Link>
-              <Link href="#program" className="btn btn-outline" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem', borderColor: 'white', color: 'white' }}>
+              <Link href="#program" className="btn btn-outline" style={{ padding: '0.8rem 2rem', fontSize: '1.05rem', borderColor: 'white', color: 'white' }}>
                 Lihat Program
               </Link>
             </div>
