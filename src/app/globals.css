@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: 16px; /* Standard base */
+  font-size: 16px;
   background: var(--background);
   width: 100%;
   overflow-x: hidden;
@@ -57,36 +57,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* RESPONSIVE SYSTEM: Scale down everything proportionally on smaller screens */
-@media (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
-}
-
+/* RESPONSIVE UTILITIES */
 @media (max-width: 768px) {
-  html {
-    font-size: 12px;
+  .section {
+    padding: 3rem 0; /* Reduce padding on mobile */
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .center-on-mobile {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem; /* Smaller buttons on mobile */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  html {
-    font-size: 11px; /* Even smaller for very narrow phones to prevent overflow */
-  }
-  
-  .hide-on-mobile {
-    display: none !important;
-  }
-
   .stack-on-mobile {
     flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-
-  .center-on-mobile {
-    text-align: center !important;
-    align-items: center !important;
   }
 }
 
@@ -133,6 +127,18 @@ img {
 
 .section {
   padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+  .container {
+    padding: 0 1.25rem;
+  }
+  .gap-responsive {
+    gap: 1.5rem !important;
+  }
 }
 
 .btn {
@@ -223,13 +229,25 @@ img {
 
 .glass-nav {
   width: 100%;
-  background: var(--glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--glass-border);
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+main {
+  padding-top: 80px; /* Offset for fixed header */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
 }
 
 /* Form Styles */

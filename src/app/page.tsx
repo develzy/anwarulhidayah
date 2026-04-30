@@ -39,18 +39,18 @@ export default function Home() {
           }}></div>
         </div>
 
-        <div className="container animate-fade-in" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container animate-fade-in center-on-mobile" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '48rem' }}>
             <span className="badge" style={{ marginBottom: '1.5rem' }}>
               Penerimaan Santri Baru 2026/2027
             </span>
-            <h1 style={{ color: 'white', fontSize: 'clamp(2.8rem, 8vw, 4.5rem)', marginBottom: '1.5rem', fontWeight: 700 }}>
+            <h1 style={{ color: 'white', fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', marginBottom: '1.5rem', fontWeight: 700 }}>
               Membentuk Generasi Beradab & <span className="text-gradient">Berilmu</span>
             </h1>
-            <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: '#e2e8f0', fontWeight: 300, lineHeight: 1.8 }}>
+            <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', color: '#e2e8f0', fontWeight: 300, lineHeight: 1.8 }}>
               Bergabunglah bersama kami di Pondok Pesantren Anwarul Hidayah. Tempat dimana ilmu agama dan akhlak menjadi prioritas utama dalam mendidik santri.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <div className="center-on-mobile" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link href="/pendaftaran" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
                 Daftar Sekarang
               </Link>
@@ -92,7 +92,7 @@ export default function Home() {
       {/* Profile Section */}
       <section className="section" style={{ background: 'var(--background)' }}>
         <div className="container">
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+          <div className="gap-responsive center-on-mobile" style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
             <div style={{ flex: '1 1 400px', position: 'relative', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', border: '1px solid rgba(255,255,255,0.5)', background: 'var(--surface)' }}>
               <div style={{ aspectRatio: '3/4', width: '100%', position: 'relative' }}>
                 <Image
@@ -124,7 +124,7 @@ export default function Home() {
       {/* Features Section */}
       <section id="program" className="section">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <div className="center-on-mobile" style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Program Unggulan Kami</h2>
             <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
               Kami menawarkan berbagai program pendidikan yang dirancang untuk membekali santri dengan pemahaman agama yang mendalam dan karakter yang kuat.
@@ -166,7 +166,7 @@ export default function Home() {
       {/* Schedule Section */}
       <section className="section" style={{ background: 'var(--background)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'start' }}>
+          <div className="gap-responsive" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'start' }}>
 
             {/* Timeline */}
             <div>
