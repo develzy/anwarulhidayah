@@ -25,16 +25,16 @@ export default function RootLayout({
     <html lang="id" className={outfit.variable}>
       <body suppressHydrationWarning>
         <header className="glass-nav">
-          <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.5rem' }}>
+          <div className="container stack-on-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.5rem', gap: '1rem' }}>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', transition: 'transform 0.3s ease' }} className="hover-lift">
-              <Image src="/logo.png" alt="Logo PP Anwarul Hidayah" width={55} height={55} style={{ filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
+              <Image src="/logo.png" alt="Logo PP Anwarul Hidayah" width={50} height={50} style={{ filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
               <div>
                 <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--primary)', letterSpacing: '0.02em', fontWeight: 700 }}>PP ANWARUL HIDAYAH</h3>
-                <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>KALISALAK - TEGAL</p>
+                <p className="hide-on-mobile" style={{ margin: 0, fontSize: '0.75rem', color: 'var(--secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>KALISALAK - TEGAL</p>
               </div>
             </Link>
-            <nav style={{ display: 'flex', gap: '2.5rem', fontWeight: 500, alignItems: 'center' }}>
-              <Link href="/" style={{ color: 'var(--primary-light)' }}>Beranda</Link>
+            <nav style={{ display: 'flex', gap: '1.5rem', fontWeight: 500, alignItems: 'center' }}>
+              <Link href="/" className="hide-on-mobile" style={{ color: 'var(--primary-light)' }}>Beranda</Link>
               <Link href="/pendaftaran" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.95rem' }}>Daftar Sekarang</Link>
             </nav>
           </div>

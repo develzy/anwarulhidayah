@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px; /* Standard base */
   background: var(--background);
   width: 100%;
   overflow-x: hidden;
@@ -57,9 +57,36 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* RESPONSIVE SYSTEM: Scale down everything proportionally on smaller screens */
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
-    font-size: 16px; /* Back to normal on mobile */
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 11px; /* Even smaller for very narrow phones to prevent overflow */
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .stack-on-mobile {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .center-on-mobile {
+    text-align: center !important;
+    align-items: center !important;
   }
 }
 
