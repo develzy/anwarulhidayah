@@ -32,12 +32,38 @@ export default function RegistrationPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
+    
+    // Construct WhatsApp message
+    const message = `*PENDAFTARAN SANTRI BARU PP ANWARUL HIDAYAH*
+    
+*A. DATA SANTRI*
+Nama Lengkap : ${formData.namaLengkap}
+Tempat, Tgl Lahir : ${formData.tempatLahir}, ${formData.tanggalLahir}
+Jenis Kelamin : ${formData.jenisKelamin}
+Pendidikan Terakhir : ${formData.pendidikanTerakhir}
+
+*B. DATA ORANG TUA/WALI*
+Nama Ayah : ${formData.namaAyah}
+Nama Ibu : ${formData.namaIbu}
+Alamat Lengkap : ${formData.alamat}
+No. WhatsApp Aktif : ${formData.whatsapp}
+
+*C. ALASAN MENDAFTAR*
+${formData.alasanMendaftar}
+
+------------------------
+Mohon info pendaftaran selanjutnya. Terima kasih.`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const waUrl = `https://wa.me/6285177000972?text=${encodedMessage}`;
+
+    // Simulate short processing time for UX, then redirect
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
+      window.open(waUrl, '_blank');
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 2000);
+    }, 1000);
   };
 
   if (isSuccess) {

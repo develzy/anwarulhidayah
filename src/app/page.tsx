@@ -74,7 +74,7 @@ export default function Home() {
             padding: '3rem'
           }}>
             <div>
-              <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>500+</h2>
+              <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>25+</h2>
               <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>Santri Aktif</p>
             </div>
             <div style={{ borderLeft: '1px solid var(--border)', borderRight: '1px solid var(--border)' }}>
