@@ -12,8 +12,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Anwarul Hidayah Kalisalak",
-  description: "Pendaftaran Santri Baru Pondok Pesantren Anwarul Hidayah Kalisalak Tegal Tahun Ajaran 2026/2027.",
-  keywords: "Pesantren, Anwarul Hidayah, Tegal, Pendaftaran Santri Baru, PSB",
+  description: "Portal Pendaftaran Santri Baru (PSB) Pondok Pesantren Anwarul Hidayah Kalisalak Tegal Tahun Ajaran 2026/2027.",
+  keywords: "Pesantren, Anwarul Hidayah, Tegal, Pendaftaran Santri Baru, PSB, Pondok Pesantren",
 };
 
 export default function RootLayout({
