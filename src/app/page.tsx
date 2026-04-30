@@ -201,7 +201,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Ba'da Ashar</h4>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pembelajaran bersama KH. Nawawi Ashari, S. HI., dilanjutkan kegiatan ngaji & penguasaan bacaan Al-Qur'an.</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pembelajaran bersama Pengasuh, dilanjutkan kegiatan ngaji & penguasaan bacaan Al-Qur'an.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
@@ -210,7 +210,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Ba'da Isya</h4>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pengkajian bersama KH. Nawawi Ashari, S. HI., dilanjutkan kegiatan pembelajaran Madrasah (Dewan Asatidz).</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pengkajian bersama Pengasuh, dilanjutkan kegiatan pembelajaran Madrasah (Dewan Asatidz).</p>
                   </div>
                 </div>
               </div>
