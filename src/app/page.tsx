@@ -131,14 +131,14 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div className="grid-3-col" style={{ display: 'grid', gap: '2rem' }}>
             <div className="card">
               <div style={{ width: '60px', height: '60px', background: 'rgba(37, 99, 235, 0.1)', color: 'var(--accent)', borderRadius: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
               </div>
-              <h3>Tahfidzul Qur'an</h3>
+              <h3>Al-Qur'an</h3>
               <p style={{ color: 'var(--text-muted)', marginTop: '1rem', lineHeight: 1.7 }}>
-                Program akselerasi hafalan Al-Qur'an dengan metode talaqqi yang dibimbing oleh ustadz berpengalaman.
+                Program Baca Al-Qur'an dengan metode sorogan dan talaqqi yang dibimbing oleh ustadz berpengalaman.
               </p>
             </div>
             <div className="card">
