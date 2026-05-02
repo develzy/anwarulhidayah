@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Anwarul Hidayah Kalisalak",
   description: "Portal Pendaftaran Santri Baru (PSB) Pondok Pesantren Anwarul Hidayah Kalisalak Tegal Tahun Ajaran 2026/2027.",
   keywords: "Pesantren, Anwarul Hidayah, Tegal, Pendaftaran Santri Baru, PSB, Pondok Pesantren",
+  verification: {
+    google: "etyJOrx_ZDh107lMdDlDI-LrmZREck9z-F5e9YXGFng",
+  },
   icons: {
     icon: "/logo.png",
   },
