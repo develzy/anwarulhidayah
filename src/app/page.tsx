@@ -121,6 +121,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Visi Misi Section */}
+      <section className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span className="badge" style={{ marginBottom: '1rem' }}>Visi & Misi</span>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Komitmen & Tujuan Kami</h2>
+          </div>
+
+          <div className="gap-responsive" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+            {/* Visi Card */}
+            <div className="card" style={{ 
+              background: 'linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%)', 
+              color: 'white',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              textAlign: 'center',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.1 }}>
+                <svg width="120" height="120" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </div>
+              <h3 style={{ color: 'var(--secondary)', fontSize: '1.8rem', marginBottom: '1.5rem', fontWeight: 700 }}>VISI</h3>
+              <p style={{ fontSize: '1.3rem', lineHeight: 1.6, fontWeight: 500, fontStyle: 'italic' }}>
+                "Mencetak generasi berakhlak mulia, berilmu, mandiri, dan bermanfaat."
+              </p>
+            </div>
+
+            {/* Misi List */}
+            <div className="card">
+              <h3 style={{ color: 'var(--primary)', fontSize: '1.8rem', marginBottom: '1.5rem', fontWeight: 700 }}>MISI</h3>
+              <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                {[
+                  "Menanamkan akhlak mulia dan kepribadian islami melalui pendidikan adab dan tafaqquh fid-din.",
+                  "Mengkaji Al-Qur’an, hadits, fiqih, dan ilmu keislaman secara mendalam.",
+                  "Mencetak kader ulama dan da’i yang siap membimbing masyarakat.",
+                  "Membentuk pribadi yang mandiri, disiplin, dan sederhana.",
+                  "Melestarikan tradisi keilmuan Islam (turats).",
+                  "Mengabdikan ilmu untuk kemaslahatan masyarakat."
+                ].map((item, index) => (
+                  <li key={index} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                    <div style={{ 
+                      width: '28px', 
+                      height: '28px', 
+                      borderRadius: '50%', 
+                      background: 'rgba(37, 99, 235, 0.1)', 
+                      color: 'var(--accent)', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      flexShrink: 0,
+                      marginTop: '4px',
+                      fontSize: '0.8rem',
+                      fontWeight: 700
+                    }}>
+                      {index + 1}
+                    </div>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.5 }}>{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="program" className="section">
         <div className="container">
@@ -249,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+      <section id="biaya" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="badge" style={{ marginBottom: '1rem' }}>Transparansi Biaya</span>
